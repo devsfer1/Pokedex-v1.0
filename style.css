@@ -1,0 +1,61 @@
+@import url(//db.onlinewebfonts.com/c/84253455d9c02e0cdd20ea402a99c9e5?family=Flexo+Thin);
+
+/* === Global === */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Flexo Thin";
+    background-color: #FFFFFF;
+}
+
+/* === Estilização === */
+.title {
+    text-align: center;
+    padding: 60px 0 0 0;
+}
+
+.container {
+    width: 80%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    margin: 0 auto;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: ease 0.2s;
+}
+
+.card-container:hover {
+    transform: translate(0, -8px);
+}
+
+.card {
+    background-color: #F2F2F2;
+    width: 250px;
+    height: 250px;
+    border-radius: 3px;
+    margin: 0 0 5px 0;
+}
+
+.pokemon-id {
+    margin: 0 0 15px 0;
+    color: #919191;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.pokemon-name {
+    color: #313131;
+    font-size: 24px;
+}
+
