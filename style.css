@@ -11,12 +11,18 @@
 body {
     font-family: "Flexo Thin";
     background-color: #FFFFFF;
+    transition: background 0.2s linear;
 }
 
-/* === Estilização === */
+body.dark {
+    background-color: #0D1117;
+}
+
+/* === Estilização geral === */
 .title {
     text-align: center;
     padding: 60px 0 0 0;
+    margin: 0 0 30px 0;
 }
 
 .container {
@@ -45,6 +51,13 @@ body {
     height: 250px;
     border-radius: 3px;
     margin: 0 0 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.card-img {
+    width: 80%;
+    margin: 0 auto;
 }
 
 .pokemon-id {
@@ -58,4 +71,55 @@ body {
     color: #313131;
     font-size: 24px;
 }
+
+
+/* === Dark Mode Style === */
+.label {
+    width: 50px;
+    height: 26px;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    padding: 5px;
+    position: relative;
+    transform: scale(1.5);
+    margin-left: 90%;
+    cursor: pointer;
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+.ball {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    background-color: #fff;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+
+
+
+
+
 
