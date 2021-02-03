@@ -2,7 +2,7 @@ const container = document.getElementById('container');
 
 // Fetch Poke Api
 function fetchPokemons() {
-    fetch('https://pokeapi.co/api/v2/pokemon?limit=151')
+    fetch('https://pokeapi.co/api/v2/pokemon?limit=8')
         .then(res => res.json())
         .then(function(allpokemon) {
             allpokemon.results.forEach(pokemon => {
@@ -37,8 +37,10 @@ function showPokeDom(pokeData) {
             `<div class="card">
                 <img src="https://pokeres.bastionbot.org/images/pokemon/${poke.id}.png" alt="" class="card-img">
              </div> 
-            <p class="pokemon-id">N°${poke.id}</p>
-            <h4 class="pokemon-name">${poke.name}</h4> `
+             <div class="card-details">
+                <p class="pokemon-id">N°${poke.id}</p>
+                <h4 class="pokemon-name">${poke.name}</h4> 
+             </div>`
            
         container.appendChild(cardContainer); 
     });
