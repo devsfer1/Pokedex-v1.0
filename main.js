@@ -34,18 +34,17 @@ function showPokeDom(pokeData) {
         const cardContainer = document.createElement('div');
         cardContainer.className = 'card-container';
         cardContainer.innerHTML = 
-        `<div class="card">
-        </div>
-         <p class="pokemon-id">N°${poke.id}</p>
-         <h4 class="pokemon-name">${poke.name}</h4>
-        `   
-        container.appendChild(cardContainer);
+            `<div class="card">
+                <img src="https://pokeres.bastionbot.org/images/pokemon/${poke.id}.png" alt="" class="card-img">
+             </div> 
+            <p class="pokemon-id">N°${poke.id}</p>
+            <h4 class="pokemon-name">${poke.name}</h4> `
+           
+        container.appendChild(cardContainer); 
     });
+};
+        
     
-}
-
-
-
 fetchPokemons();
 
 
