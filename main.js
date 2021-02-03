@@ -1,5 +1,4 @@
-
-
+const container = document.getElementById('container');
 
 // Fetch Poke Api
 function fetchPokemons() {
@@ -8,6 +7,7 @@ function fetchPokemons() {
         .then(function(allpokemon) {
             allpokemon.results.forEach(pokemon => {
                 fetchPokemonData(pokemon);
+                //console.log(pokemon);
             });
         });
 }
@@ -18,13 +18,36 @@ function fetchPokemonData(pokemon) {
 
     fetch(url)
         .then(res => res.json())
+
         .then(function(pokeData) {
-            console.log(pokeData);
+            showPokeDom(pokeData);
+            showPokeImg(pokeData);
         });
+}
+
+// Show Pokemon in the DOM
+function showPokeDom(pokeData) {
+    
+    let pokeArr = new Array(pokeData);
+
+    pokeArr.forEach(poke => {
+        const cardContainer = document.createElement('div');
+        cardContainer.className = 'card-container';
+        cardContainer.innerHTML = 
+        `<div class="card">
+        </div>
+         <p class="pokemon-id">N°${poke.id}</p>
+         <h4 class="pokemon-name">${poke.name}</h4>
+        `   
+        container.appendChild(cardContainer);
+    });
+    
 }
 
 
 
 fetchPokemons();
 
-fetchPokemonData();
+
+
+
