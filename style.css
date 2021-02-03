@@ -70,6 +70,7 @@ body.dark {
 .pokemon-name {
     color: #313131;
     font-size: 24px;
+    font-weight: 600;
 }
 
 
