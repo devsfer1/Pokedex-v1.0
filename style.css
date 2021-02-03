@@ -59,6 +59,7 @@ body.dark {
     margin: 0 0 5px 0;
     display: flex;
     align-items: center;
+    box-shadow: 0 4px 4px 0 rgb(0 0 0 / 50%);
 }
 
 .card-img {
