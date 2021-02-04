@@ -2,7 +2,7 @@ const container = document.getElementById('container');
 
 // Fetch Poke Api
 function fetchPokemons() {
-    fetch(`https://pokeapi.co/api/v2/pokemon?limit=151`)
+    fetch(`https://pokeapi.co/api/v2/pokemon?limit=151&&offset=0`)
         .then(res => res.json())
         .then(function(allpokemon) {
             allpokemon.results.forEach(pokemon => {

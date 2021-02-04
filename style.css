@@ -9,9 +9,9 @@
 }
 
 body {
-    font-family: "Flexo";
     background-color: #FFFFFF;
     transition: background 0.2s linear;
+    font-family: "Flexo";
 }
 
 body.dark {
