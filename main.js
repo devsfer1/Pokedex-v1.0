@@ -43,10 +43,12 @@ function showPokeDom(pokeData) {
            
         container.appendChild(cardContainer); 
     });
+
 };
 
-
 fetchPokemons();
+
+
 
 
 
