@@ -29,9 +29,10 @@ function showPokeDom(pokeData) {
     let pokeArr = new Array(pokeData);
     let pokeName = pokeData.name[0].toUpperCase() + pokeData.name.slice(1);
 
-    //console.log(pokeData);
+    
+    console.log(pokeArr.id);
 
-    pokeArr.forEach(poke => {
+    pokeArr.slice(0,10).forEach(poke => {
         const cardContainer = document.createElement('div');
         cardContainer.className = 'card-container';
         cardContainer.innerHTML = 
