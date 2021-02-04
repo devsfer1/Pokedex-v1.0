@@ -29,6 +29,26 @@ body.dark {
     color: #BDC5CC;    
 }
 
+.buttons-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.select {
+    margin-left: 10%;
+    appearance: none;
+    padding: 10px 20px;
+    background-color: #313131;
+    color: #FFFFF9;   
+    font-family: "Flexo";
+    font-size: 16px;
+    width: 250px;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
 .container {
     width: 65%;
     min-height: 100vh;
