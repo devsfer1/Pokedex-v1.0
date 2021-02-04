@@ -1,4 +1,4 @@
-@import url(https://db.onlinewebfonts.com/c/51ba22ae06790efd464bde752a2cd9d1?family=Flexo);
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
 
 /* === Global === */
 
@@ -11,7 +11,7 @@
 body {
     background-color: #FFFFFF;
     transition: background 0.2s linear;
-    font-family: "Flexo";
+    font-family: 'Exo', sans-serif;
 }
 
 body.dark {
