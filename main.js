@@ -28,8 +28,10 @@ function showPokeDom(pokeData) {
     
     let pokeArr = new Array(pokeData);
     let pokeName = pokeData.name[0].toUpperCase() + pokeData.name.slice(1);
-    
-    pokeArr.forEach(poke => {
+
+    console.log(pokeArr);
+
+    pokeArr.map(poke => {
         const cardContainer = document.createElement('div');
         cardContainer.className = 'card-container';
         cardContainer.innerHTML = 
@@ -85,18 +87,3 @@ function showPokeDom(pokeData) {
 };
 
 fetchPokemons();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
