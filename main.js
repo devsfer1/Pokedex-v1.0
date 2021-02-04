@@ -88,7 +88,7 @@ function showPokeDom(pokeData) {
 
 setTimeout(() => {
     fetchPokemons();
-}, 1000);
+}, 3000);
 
 
 
