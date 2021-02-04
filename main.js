@@ -2,7 +2,7 @@ const container = document.getElementById('container');
 
 // Fetch Poke Api
 function fetchPokemons() {
-    fetch(`https://pokeapi.co/api/v2/pokemon?limit=151&&offset=0`)
+    fetch(`https://pokeapi.co/api/v2/pokemon?limit=8&&offset=0`)
         .then(res => res.json())
         .then(function(allpokemon) {
             allpokemon.results.forEach(pokemon => {
@@ -22,8 +22,6 @@ function fetchPokemonData(pokemon) {
             showPokeDom(pokeData);
         });
 }
-
-
 
 // Show Pokemon in the DOM
 function showPokeDom(pokeData) {
@@ -86,9 +84,8 @@ function showPokeDom(pokeData) {
     });
 };
 
-setTimeout(() => {
-    fetchPokemons();
-}, 3000);
+fetchPokemons();
+
 
 
 
