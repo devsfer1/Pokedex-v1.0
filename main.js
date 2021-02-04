@@ -19,7 +19,7 @@ function fetchPokemonData(pokemon) {
         .then(res => res.json())
 
         .then(function(pokeData) {
-            setTimeout(showPokeDom(pokeData), 1000);
+            showPokeDom(pokeData);
         });
 }
 
@@ -86,7 +86,11 @@ function showPokeDom(pokeData) {
     });
 };
 
-fetchPokemons();
+setTimeout(() => {
+    fetchPokemons();
+}, 1000);
+
+
 
 
 
