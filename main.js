@@ -19,20 +19,19 @@ function fetchPokemonData(pokemon) {
         .then(res => res.json())
 
         .then(function(pokeData) {
-            showPokeDom(pokeData);
+            setTimeout(showPokeDom(pokeData), 1000);
         });
 }
+
+
 
 // Show Pokemon in the DOM
 function showPokeDom(pokeData) {
     
     let pokeArr = new Array(pokeData);
     let pokeName = pokeData.name[0].toUpperCase() + pokeData.name.slice(1);
-
     
-    console.log(pokeArr.id);
-
-    pokeArr.slice(0,10).forEach(poke => {
+    pokeArr.forEach(poke => {
         const cardContainer = document.createElement('div');
         cardContainer.className = 'card-container';
         cardContainer.innerHTML = 
