@@ -102,12 +102,102 @@ body.dark {
     color: #313131;
     font-size: 24px;
     font-weight: 600;
+    margin: 0 0 10px 0;
 }
 
 .pokemon-name.white {
     color: #BDC5CC;
 }
 
+.pokemon-types {
+    display: flex;
+}
+
+.poke-type {
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: red;
+    height: 20px;
+    width: 80px;
+    margin: 0 5px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* === Pokemon Types === */
+
+.grass {
+    background-color: #9BCC50;
+}
+
+.poison {
+    background-color: #B97FC9;
+    color: #fff;
+}
+
+.fire {
+    background-color: #FD7D24;
+    color: #fff;
+}
+
+.flying {
+    background-color: #3DC7EF;
+}
+
+.water {
+    background-color: #4592C4;
+    color: #fff;
+}
+
+.bug {
+    background-color: #729F3F;
+    color: #fff;
+}
+
+.normal {
+    background-color: #A4ACAF;
+}
+
+.electric {
+    background-color: #EED535;
+}
+
+.ground {
+    background-color: #F7DE3F;
+}
+
+.fairy {
+    background-color: #FDB9E9;
+}
+
+.fighting {
+    background-color: #D56723;
+    color: #fff;
+}
+
+.psychic {
+    background-color: #F366B9;
+    color: #fff;
+}
+
+.rock {
+    background-color: #A38C21;
+    color: #fff;
+}
+
+.steel {
+    background-color: #9EB7B8;
+}
+
+.ice {
+    background-color: #51C4E7;
+}
+
+.dragon {
+    background-color: #53A4CF;
+    color: #fff;
+}
 
 /* === Dark Mode Style === */
 .label {
