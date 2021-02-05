@@ -18,7 +18,7 @@ function fetchPokemonData(pokemon) {
     fetch(url)
         .then(res => res.json())
 
-        .then(function(pokeData, callback) {
+        .then(function(pokeData) {
             showPokeDom(pokeData);
         });
 }
@@ -85,3 +85,4 @@ function showPokeDom(pokeData) {
 };
 
 fetchPokemons();
+
