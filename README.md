@@ -26,6 +26,6 @@
 <br>
 <h2>Links</h2>
 <hr>
-<p>Demo: <a href="https://mypokedexapp.netlify.app/">https://mypokedexapp.netlify.app/ </a></p>
+<p>Demonstration: <a href="https://mypokedexapp.netlify.app/">https://mypokedexapp.netlify.app/ </a></p>
 <p>Repo: <a href="https://github.com/devsfe/Pokedex-v1.0">https://github.com/devsfe/Pokedex-v1.0 </a></p>
 <p>Javascript50: <a href="https://github.com/devsfe/Javascript50">https://github.com/devsfe/Javascript50 </a></p>
